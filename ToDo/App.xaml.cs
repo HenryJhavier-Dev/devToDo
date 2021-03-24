@@ -1,12 +1,26 @@
-﻿using System;
-using ToDo.view;
+﻿using ToDo.DataService;
+using ToDo.View;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ToDo
 {
     public partial class App : Application
     {
+
+        #region properties  sqlite
+        static AsyncLazy<SQLiteDatabase> database;
+
+        public static AsyncLazy<SQLiteDatabase> DataBase
+        {
+            get
+            {
+                if (database == null)
+                    database = SQLiteDatabase.Instance;
+                return database;
+            }
+        }
+        #endregion
+
         public App()
         {
             InitializeComponent();

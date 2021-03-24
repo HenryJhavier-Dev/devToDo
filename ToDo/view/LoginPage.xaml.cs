@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using ToDo.viewmodel;
+using ToDo.ViewModel;
 using Xamarin.Forms;
 
-namespace ToDo.view
+namespace ToDo.View
 {
     public partial class LoginPage : ContentPage
     {
@@ -11,6 +11,7 @@ namespace ToDo.view
         {
             InitializeComponent();
             BindingContext = new LoginViewModel();
+
         }
     }
 }

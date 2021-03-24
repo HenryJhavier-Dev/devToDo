@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ToDo.view.NewToDoPage">
+    x:Class="ToDo.View.NewToDoPage">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,6 +17,7 @@
         <Entry Placeholder="Name" Grid.ColumnSpan="2"/>
         <DatePicker Grid.Row="1"/>
         <TimePicker Grid.Row="1" Grid.Column="1"/>
-        <Button Grid.Row="2" Text="Save" Grid.ColumnSpan="2"/>
+        <Button Grid.Row="2" Text="Save"
+                Command="{Binding SaveNewTodoCommand}"  Grid.ColumnSpan="2"/>
     </Grid>
 </ContentPage>

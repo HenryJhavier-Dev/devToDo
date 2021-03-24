@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Input;
-using ToDo.view;
+using ToDo.View;
 using Xamarin.Forms;
 
-namespace ToDo.viewmodel
+namespace ToDo.ViewModel
 {
-    public class LoginViewModel: BaseViewModel
+    public class LoginViewModel : BaseViewModel
     {
 
         #region fields
@@ -21,7 +21,8 @@ namespace ToDo.viewmodel
         public LoginViewModel()
         {
             LoginCommand = new Command(
-                execute: async ()  => {
+                execute: async () =>
+                {
                     await Application.Current.MainPage.Navigation.PushAsync(new NewToDoPage());
                     Console.WriteLine("Execute");
                 },

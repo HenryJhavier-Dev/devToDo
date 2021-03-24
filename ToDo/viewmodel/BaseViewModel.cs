@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ToDo.viewmodel
+namespace ToDo.ViewModel
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
@@ -11,7 +11,7 @@ namespace ToDo.viewmodel
         {
         }
 
-    
+
 
         #region INotifyPropertyChanged
 

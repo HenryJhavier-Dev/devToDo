@@ -16,8 +16,10 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="model\" />
-    <Folder Include="view\" />
-    <Folder Include="viewmodel\" />
+    <Folder Include="DataService\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="View\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>
